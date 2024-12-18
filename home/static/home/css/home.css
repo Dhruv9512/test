@@ -5,7 +5,7 @@
   padding-bottom: 4rem;
 }
 
-/* Profile container - round corners, centered content, and smooth transitions */
+/* Profile container with added animation */
 .profile-container {
   border-radius: 8%;
   background: transparent;
@@ -15,16 +15,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 1s ease-in-out, box-shadow 0.8s ease-in-out,
-    background-color 0.8s ease;
-  box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.2),
-    0 8px 20px rgba(0, 0, 0, 0.15), 0 2px 10px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 1s ease-in-out, background-color 1s ease;
+  box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.5),
+    0 8px 20px rgba(0, 0, 0, 0.20), 0 2px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to top, rgba(255, 165, 0, 0.20), #e0e0e0);
+   
+  animation: pulse 3.5s infinite;
 }
 
-/* Hover effect for profile container */
-.profile-container:hover {
-  transform: scale(1.02);
-  background: linear-gradient(to top, rgba(255, 165, 0, 0.10), #e0e0e0);
+/* Keyframe animation for pulsing effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Profile image styling */
@@ -37,21 +46,21 @@
   box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+
 .Resume {
-  background-color: #ff6f20;
+  background-color: #f97316;
   color: white; 
   border: none; 
   padding: 14px 28px; 
-  border-radius: 50px; 
   font-size: 18px;
   font-weight: bold; 
   cursor: pointer; 
-  transition: background-color 0.6s, transform 0.2s ease-in-out, box-shadow 0.3s; 
+  transition: background-color 0.4s, transform 0.4s ease-in-out, box-shadow 0.4s; 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
 .Resume:hover {
-  background-color: #e65c00; 
+  background-color: #ca5203; 
   transform: translateY(-3px); 
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
@@ -61,11 +70,9 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
 }
 
-
-
 /* Intro paragraph styling */
 .intro p {
-  color: #767676;
+  color: #000000; /* Changed to black */
   font-size: 20px;
 }
 

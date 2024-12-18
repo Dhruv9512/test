@@ -19,83 +19,53 @@ header {
   background-color: #e0e0e0 !important;  
 }
 
-
 footer {
   margin-top: auto;
   padding: 20px 0;
-  background-color: #e0e0e0  !important;
+  background-color: #e0e0e0 !important;
 }
 
-/* Navbar Styling */
+
+/* General link styles */
 .navbar-nav a {
-  color: #767676;
-  transition: color 0.3s ease, font-size 0.8s ease;
-  font-size: 16px;
-}
-
-/* Active state for navbar links */
-.active {
-  color: #f97316 !important;
-  font-size: 15px !important;
-  font-weight: bold;
-  text-shadow: 0 0 5px rgba(255, 150, 50, 0.7);
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  color: #000000;
+  text-decoration: none; 
+  font-family: inherit; 
+  font-size: 20px;
+  padding: 8px 16px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Navbar link hover effect */
 .navbar-nav a:hover {
   color: white;
   background-color: #f97316;
-  font-size: 15px;
-  padding: 8px 16px;
-  border-radius: 4px;
+  transform: scale(1.05); 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease,
-    box-shadow 0.3s ease;
-}
-
-/* Ensure active link maintains styles on hover */
-.navbar-nav a.active:hover {
-  color: #ffffff !important;
-  background-color: #f97316;
-  box-shadow: none;
-  transform: scale(1);
 }
 
 /* Mobile Navbar */
 .mobile_navbar a {
   width: 33%;
   text-decoration: none;
-  color: #767676;
-  transition: color 0.3s ease, font-size 0.8s ease;
+  color: #000000;
+  font-family: inherit; 
   font-size: 15px;
   padding: 8px 16px;
   border-radius: 4px;
   margin-top: 1.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Mobile Navbar link hover effect */
 .mobile_navbar a:hover {
   color: white !important;
   background-color: #f97316;
-  font-size: 15px;
-  padding: 8px 16px;
-  border-radius: 4px;
+  transform: scale(1.05); /* Smooth scaling effect */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease,
-    box-shadow 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Active state for mobile navbar links */
-.mobile_navbar a.active {
-  color: #f97316;
-  font-size: 16px;
-  font-weight: bold;
-  text-shadow: 0 0 5px rgba(255, 150, 50, 0.7);
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
 
 /* Navbar Icon */
 #nav_icon {
@@ -105,13 +75,13 @@ footer {
 
 /* Offcanvas Menu */
 #offcanvas {
-  background-color: #e0e0e0 ;
+  background-color: #e0e0e0;
 }
 
 /* Button Styling */
 .btn {
   background-color: #f97316;
-  color: #767676;
+  color: #000000; /* Changed to black */
 }
 
 .btn:hover {
@@ -120,7 +90,7 @@ footer {
 
 /* Footer Styling */
 .copyright p {
-  color: #767676;
+  color: #000000; /* Changed to black */
   text-align: center;
   margin: 0;
 }
@@ -157,7 +127,7 @@ footer {
 }
 
 .info p {
-  color: #767676;
+  color: #000000; /* Changed to black */
 }
 
 .info div {
@@ -186,7 +156,7 @@ footer {
 }
 
 .about p {
-  color: #767676;
+  color: #000000; /* Changed to black */
 }
 
 .about h4 {

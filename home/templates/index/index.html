@@ -34,14 +34,15 @@
             {% comment %} Desktop navbar {% endcomment %}
             <div class="collapse navbar-collapse justify-content-end" id="collapse">
                 <div class="navbar-nav gap-5">
-                    {% url 'home' as home %}
-                    <a class="nav-link{% if request.path == home %} active {% endif %}" href="{{ home }}">Home</a>
-                    {% url 'about me' as about %}
-                    <a class="nav-link{% if request.path == about %} active {% endif %}" href="{{ about }}">About me</a>
-                    {% url 'my work' as work %}
-                    <a class="nav-link{% if request.path == work %} active {% endif %}" href="{{ work }}">My Work</a>
+                    {% url "home" as home %}
+                    <a href="{{ home }}">Home</a>
+                    {% url "about me" as about %}
+                    <a href="{{ about }}">About me</a>
+                    {% url "Work" as work %}
+                    <a href="{{ work }}">My Work</a>
                 </div>
             </div>
+            
         </nav>
         {% comment %} Mobile navbar {% endcomment %}
         <div class="offcanvas offcanvas-start position-fixed" tabindex="-1" id="offcanvas">
